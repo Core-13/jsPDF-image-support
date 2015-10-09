@@ -4,7 +4,7 @@ This is an example app with jsPDF image support plug-in that allows you to use t
 
 This version is currently considered pre-release.
 
-### Important note ###
+### Important Note ###
 
 The PDF specification only supports JPEG images, if you have an image in a different format (PNG for example) then you must FIRST convert the image to the JPEG format before attempting to include it.
 
@@ -14,13 +14,15 @@ One way to convert the images is to use the [ImageFactory](https://github.com/ap
 var newImageAsJPEG = ImageFactory.compress(nonJPEGImage, 0.8);
 ```
 
+### Current Version ###
+
 Version 0.2
 
 [jsPDF libary](http://parall.ax/products/jspdf) 
 
 I do not claim to be the author of the jsPDF library, this code simply adds preliminary image support when used with Titanium.
 
-### History ###
+### Version History ###
 
 0.1 Initial proof of concept
 0.2 Some tweaks provided by [Ben Bahrenburg](http://bahrenburgs.com/), some of his public work [github.com/benbahrenburg](https://github.com/benbahrenburg)
