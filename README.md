@@ -4,6 +4,16 @@ This is an example app with jsPDF image support plug-in that allows you to use t
 
 This version is currently considered pre-release.
 
+### Important note ###
+
+The PDF specification only supports JPEG images, if you have an image in a different format (PNG for example) then you must FIRST convert the image to the JPEG format before attempting to include it.
+
+One way to convert the images is to use the [ImageFactory](https://github.com/appcelerator-modules/ti.imagefactory) module within your app, then the *compress* method with the image you wish to compress and the compression ratio parameter set.
+
+```javascript
+var newImageAsJPEG = ImageFactory.compress(nonJPEGImage, 0.8);
+```
+
 Version 0.2
 
 [jsPDF libary](http://parall.ax/products/jspdf) 
